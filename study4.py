@@ -1,4 +1,4 @@
-#파이썬 날개달기
+#파이썬날개달기
 #1번문제
 
 class UpgradeCalculator:
