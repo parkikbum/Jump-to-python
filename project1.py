@@ -14,3 +14,7 @@ print('location =', location)
 x = 4
 location = seqsearch(len(S) - 1, S, x)
 print('location =' , location)
+
+a=4
+b=5
+print(a+b)
