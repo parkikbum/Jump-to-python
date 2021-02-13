@@ -9,3 +9,4 @@ elif(first <0) & (second <0):
     print("3")
 elif(first>0) & (second<0):
     print("4")
+

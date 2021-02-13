@@ -5,3 +5,4 @@ print(a*int(c[2]))
 print(a*int(c[1]))
 print(a*int(c[0]))
 print(int(a)*int(b))
+

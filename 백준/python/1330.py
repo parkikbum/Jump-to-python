@@ -6,3 +6,4 @@ elif list [0] > list[1]:
     print(">")
 elif list[0] == list[1]:
     print("==")
+
