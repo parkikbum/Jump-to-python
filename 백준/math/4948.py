@@ -1,25 +1,12 @@
-import sys
-def primeNum(num):
-    if num == 1:
-        return False
-    if num == 2:
-        return True
-    else:
-        for i in range(2, int((2*num)**0.5)+1):
-            if num % i == 0:
-                return False
-        return True
+list_p = [True] * (2*123456+2)
+list_p[0]=list_p[1]=False
+
+for i in range(2, int((2*123456+1)**0.5)+1) :
+    if list_p[i]:
+        for k in range(2*i , 2*123456+1, i):
+            list_p[k] = False
 while 1:
-    cnt = 0
-    n = int(sys.stdin.readline())
-    if n == 0:
+    x=int(input())
+    if x == 0:
         break
-    for i in range(n+1, 2*n+1):
-        if primeNum(i):
-            cnt = cnt+1
-    print(cnt)
-
-
-
-
-
+    print(sum(list_p[x+1:2*x+1]))
