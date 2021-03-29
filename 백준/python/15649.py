@@ -15,3 +15,4 @@ def solve(depth,n,m):
             visited[i] = False
             out.pop()
 solve(0,n,m)
+
