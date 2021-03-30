@@ -17,3 +17,4 @@ def solve(depth,n,m):
 solve(0,n,m)
 for k in out_a:
     print(k)
+    
