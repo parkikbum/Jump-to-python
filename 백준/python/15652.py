@@ -12,5 +12,3 @@ def solve(depth,a,m):
         visited[i] = False
         out.pop()
 solve(0,0,m)
-
-
