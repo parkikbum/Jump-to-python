@@ -1,7 +1,7 @@
 import sys
 n = int(sys.stdin.readline())
 a = []
-a = list(map(int, sys.stdin.readline().split().strip()))
+a = list(map(int, sys.stdin.readline().split()))
 stack = []
 for i in range(n):
     while stack and a[stack[-1]] < a[i]:
