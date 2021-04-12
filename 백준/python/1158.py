@@ -1,17 +1,13 @@
 import sys
+from collections import deque
 n,k = map(int, sys.stdin.readline().split())
-arr = [int(x) for x in range(1, n+1)]
-print("<" , end='')
-cnt = 0
-while 1 :
-    if cnt == n:
+arr = deque(range(1, n+1))
+sol = []
+k = k - 1
+while 1:
+    if len(arr) == 0:
         break
-    for i in range(k-1):
-        arr.append(arr.pop(0))
-    if cnt == n-1:
-        print(arr.pop(0), end='')
-        break
-    else:
-        print("%s, " %(arr.pop(0)), end="")
-    cnt = cnt + 1
-print(">")
+    arr.rotate(-k)
+    sol.append(arr[0])
+    arr.popleft()
+print('<'+", ".join(map(str, sol))+'>')
