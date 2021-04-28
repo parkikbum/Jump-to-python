@@ -1,8 +1,12 @@
 import sys
-from itertools import permutations
+from itertools import combinations
+cnt = 0
 n,s = map(int, sys.stdin.readline().split())
-number = list(map(int, sys.stdin.readline().rstrip()))
-for x in range(2,n+1):
-    item = list(compinations(number,x))
-    for x in range(len(sol)):
-        
+number = list(map(int, sys.stdin.readline().split()))
+
+for i in range(1,n+1):
+    comb = combinations(number, i)
+    for k in comb:
+        if sum(k) == s:
+            cnt = cnt + 1 
+print(cnt)
