@@ -16,7 +16,3 @@ for i in range(t):
     print(cnt)
     rank = []
     cnt = 1
-
-
-
-
